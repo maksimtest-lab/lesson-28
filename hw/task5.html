@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 28 - Homework from InnoDOM - Task 5</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            textarea {
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+
+            button {
+                width: 100px;
+                padding: 10px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 5</h1>
+    <h2>
+        Задача на вывод информации из формы
+    </h2>
+
+    <p>
+        Создайте HTML-документ с формой, содержащей поля ввода и кнопку отправки. Напишите JavaScript-код, который при отправке формы соберет данные из полей ввода и выведет их в виде сообщения.
+    </p>
+
+    <div id="container" class="container box">
+
+        <form id="form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message"></textarea><br>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="./task5.js"></script>
+</body>
+</html>
